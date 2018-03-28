@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-LightItalic.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak//fonts/Sneak/Sneak.woff2') format('woff2'),
+      url('/fonts/Sneak//fonts/Sneak/Sneak.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-Bold.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-Mono.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-Mono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-BlackItalic.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-Light.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-MediumItalic.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-Medium.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-Black.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('/fonts/Sneak/Sneak-BoldItalic.woff2') format('woff2'),
+      url('/fonts/Sneak/Sneak-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+body {
+  font-family: 'Sneak';
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+nav {
+  transition: all .25s ease;
+}
+
+/* * {
+  overflow-x: hidden;
+} */
