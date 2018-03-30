@@ -67,19 +67,20 @@
           //   context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
           //   context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
           // });
-          if (event.data.length === 0) {
-            // No face
-            console.log("no face")
-            video.classList.add("hidden")
-            warning.classList.remove("hidden")
-          } else {
-            // Yes face
-            console.log("yes face")
-            video.classList.remove("hidden")
-            warning.classList.add("hidden")
-            // event.data.forEach(function (rect) {
-            // });
-          }
+          //IF STATEMENT DISABLED FOR TESTING
+          // if (event.data.length === 0) {
+          //   // No face
+          //   console.log("no face")
+          //   video.classList.add("hidden")
+          //   warning.classList.remove("hidden")
+          // } else {
+          //   // Yes face
+          //   console.log("yes face")
+          //   video.classList.remove("hidden")
+          //   warning.classList.add("hidden")
+          //   // event.data.forEach(function (rect) {
+          //   // });
+          // }
         });
       };
     },
@@ -134,12 +135,12 @@
           // });
           if (event.data.length === 0) {
             // No face
-            console.log("no face")
-            video.classList.add("hidden")
-            warning.classList.remove("hidden")
+            // console.log("no face")
+            // video.classList.add("hidden")
+            // warning.classList.remove("hidden")
           } else {
             // Yes face
-            console.log("yes face")
+            // console.log("yes face")
             video.classList.remove("hidden")
             warning.classList.add("hidden")
             // event.data.forEach(function (rect) {
@@ -158,6 +159,8 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 
   .dim {
@@ -172,7 +175,7 @@
 
   video {
     height: 100vh;
-    transform: translateX(-34%);
+    /* transform: translateX(-34%); */
     transition: all .25s ease;
   }
 
