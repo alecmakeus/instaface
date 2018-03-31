@@ -1,8 +1,10 @@
 <template>
   <section class="feed-item">
     <div class="video-container">
-      <video src="/face-test.webm" autoplay loop muted></video>
-      <!-- <img src="https://picsum.photos/800" width="320" height="320" /> -->
+      <video autoplay loop muted>
+        <source src="/face-test.webm" type="video/webm">
+        Could not load user feed.
+      </video>
     </div>
     <div class="info">
       <span class="name">Hayley Joyal</span>
@@ -24,13 +26,15 @@
     padding-bottom: 4em;
   }
 
-  .video-container, .video-container * {
-    height: 100vw;
+  .video-container {
+    /* height: 100vw; */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
   video {
-    transform: translateX(-20%)
+    height: 100vw;
   }
 
   .info {

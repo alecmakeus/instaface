@@ -38,7 +38,6 @@
   }
 
   #advBtn {
-    margin: 0 0 2.75em;
     font-size: 2em;
   }
 
@@ -48,14 +47,25 @@
   }
 
   .overlay-text {
-    position: relative;
-    /* z-index: 10; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    height: 37vh;
+    width: 100vw;
   }
 
   .user-face-feed {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  h4 {
+    position: absolute;
+    bottom: 2em;
   }
 
 </style>

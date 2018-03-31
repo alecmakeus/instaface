@@ -1,6 +1,8 @@
 <template>
   <section class="user-face-feed">
-    <video id="video" class="video" height="568" preload autoplay loop muted></video>
+    <div class="vid-wrapper">
+      <video id="video" class="video" height="568" preload autoplay loop muted></video>
+    </div>
     <!-- <canvas id="canvas" class="no-face" width="320" height="568"></canvas> -->
     <div v-if="page === 'index'" class="dim"></div>
     <div id="warning">
@@ -187,11 +189,9 @@
 
   #warning {
     position: absolute;
-    top: 0;
+    top: 2em;
     width: 100%;
     text-align: center;
-    margin-top: 2.5em;
-    transition: all .25s ease;
   }
 
   .hidden {
