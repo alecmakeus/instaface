@@ -1,20 +1,20 @@
 <template>
   <nav class="topbar">
-    <div v-if="layout === 'default'" class="nav-btn-left">
+    <!-- <div v-if="layout === 'default'" class="nav-btn-left">
       <h3>
         <button onclick="javascript:history.back(-1)">&larr;</button>
       </h3>
-    </div>
+    </div> -->
     <div class="appname">
       <h1>
         INSTAFACE
       </h1>
     </div>
-    <div v-if="layout === 'default'" class="nav-btn-right">
+    <!-- <div v-if="layout === 'default'" class="nav-btn-right">
       <h3>
         <nuxt-link to="myface" >+</nuxt-link>
       </h3>
-    </div>
+    </div> -->
   </nav>
 </template>
 
@@ -29,25 +29,22 @@ export default {
     font-size: 1.25em;
     box-sizing: border-box;
     padding: 1.25em 0 .75em;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
   }
 
-.nav-btn-left h3, .nav-btn-right h3 {
+/* .nav-btn-left h3, .nav-btn-right h3 {
   line-height: 1.3em;
-}
+} */
 
-  h1, h3 {
+  /* h1, h3 {
     margin: 0;
     text-align: center;
-  }
+  } */
 
-  button {
-    font-size: 1em;
-    font-weight: inherit;
-    display: inline;
+  h1 {
+    text-align: center;
     margin: 0;
-    padding: 0;
   }
 
 </style>

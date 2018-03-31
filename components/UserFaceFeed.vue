@@ -92,10 +92,13 @@
 <style scoped>
   .user-face-feed {
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: -10;
   }
 
   .dim {

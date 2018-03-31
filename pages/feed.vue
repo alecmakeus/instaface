@@ -5,43 +5,65 @@
     <Face></Face>
     <Face></Face>
     <Face></Face>
-    <div class="grid"><img src="/ico/grid.svg" alt="▓"></div>
     <div class="end">
-      <h1>
-        <a href="#">&mdash;</a>
-      </h1>
+      <a href="#">
+        <p>&uarr;</p>
+        <p>&mdash;</p>
+      </a>
     </div>
+    <BottomBar></BottomBar>
   </section>
 </template>
 
 <script>
   import Face from '~/components/Face.vue'
   import UserFaceFeed from '~/components/UserFaceFeed.vue'
+  import BottomBar from '~/components/BottomBar.vue'
 
 
   export default {
     components: {
       Face,
-      UserFaceFeed
+      UserFaceFeed,
+      BottomBar
     }
   }
 
 </script>
 
 <style scoped>
-  .feed {
-    overflow: hidden;
-  }
+
   .end {
     color: #888;
-    width: 100vw;
+    width: 100%;
     text-align: center;
+    margin: 2em 0 4em;
+    font-size: 2em;
   }
 
-  .grid {
+  .end a {
+    display: block;
+    width: 1.5em;
+    height: 100%;
+    margin: auto;
+  }
+
+  .end a p {
+    margin: 0;
+    line-height: 0.45;
+  }
+
+  .view-select {
     position: fixed;
     bottom: 1em;
     right: 1em;
+    padding: .25em .25em 0;
+    width: 1.75em;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 </style>

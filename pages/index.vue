@@ -57,12 +57,6 @@
     width: 100vw;
   }
 
-  .user-face-feed {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   h4 {
     position: absolute;
     bottom: 2em;

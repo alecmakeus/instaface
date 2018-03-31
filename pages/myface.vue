@@ -1,5 +1,5 @@
 <template>
-  <section class="feed-item">
+  <section class="my-face">
     <div class="video-container">
       <UserFaceFeed></UserFaceFeed>
     </div>
@@ -8,35 +8,38 @@
       <span class="viewers">
         <span class="number">0</span> viewers</span>
     </div>
+    <BottomBar></BottomBar>
   </section>
 </template>
 
 <script>
   import UserFaceFeed from '~/components/UserFaceFeed.vue'
+  import BottomBar from '~/components/BottomBar.vue'
 
   export default {
     components: {
-      UserFaceFeed
+      UserFaceFeed,
+      BottomBar
     }
   }
 
 </script>
 
 <style scoped>
-  .feed-item {
+  /* .my-face {
     padding-bottom: 4em;
-  }
+  } */
 
   .video-container, .video-container * {
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   }
 
   .info {
     display: flex;
     box-sizing: border-box;
-    padding: 1em 1.5em 0;
+    padding: 1em 1.5em 4em;
     justify-content: space-between;
     flex-flow: row nowrap;
     font-size: 12px;
@@ -52,13 +55,6 @@
 
   .viewers {
     text-decoration: underline;
-  }
-
-  .user-face-feed {
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    height: 100%;
   }
 
   .nav-btn-right {
