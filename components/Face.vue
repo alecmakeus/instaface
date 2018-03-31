@@ -27,14 +27,12 @@
   }
 
   .video-container {
-    /* height: 100vw; */
-    overflow: hidden;
     display: flex;
     justify-content: center;
   }
 
   video {
-    height: 100vw;
+    max-height: 100vw;
   }
 
   .info {

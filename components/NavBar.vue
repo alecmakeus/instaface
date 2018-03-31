@@ -34,7 +34,7 @@ export default {
   }
 
 .nav-btn-left h3, .nav-btn-right h3 {
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
   h1, h3 {
