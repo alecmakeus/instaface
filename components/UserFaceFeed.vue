@@ -118,7 +118,6 @@
   } */
 
   #warning {
-    /* width: auto; */
     position: relative;
     top: calc(-100vh + 2em);
   }

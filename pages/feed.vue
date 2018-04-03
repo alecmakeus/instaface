@@ -1,10 +1,11 @@
 <template>
   <section class="feed">
+    <!-- <Face></Face>
     <Face></Face>
     <Face></Face>
     <Face></Face>
-    <Face></Face>
-    <Face></Face>
+    <Face></Face> -->
+    <Face v-for="face in faces"  :name="face.name" :viewers="face.viewers" :filename="face.filename" :key="face.name" ></Face>
     <div class="end">
       <a href="#">
         <p>&uarr;</p>
@@ -22,6 +23,11 @@
 
 
   export default {
+      data() {
+    return {
+      faces: require("../assets/js/faces.json")
+    };
+  },
     components: {
       Face,
       UserFaceFeed,

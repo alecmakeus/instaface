@@ -2,22 +2,20 @@
   <section class="feed-item">
     <div class="video-container">
       <video autoplay loop muted>
-        <source src="/face-test.webm" type="video/webm">
-        Could not load user feed.
+        <source :src="`/vid/${this.filename}`" type="video/webm">
       </video>
     </div>
     <div class="info">
-      <span class="name">Hayley Joyal</span>
-      <span class="viewers">
-        <span class="number">349</span> viewers</span>
+      <span class="name">{{ name }}</span>
+      <span class="viewers"><span class="number">{{ viewers }}</span> viewers</span>
     </div>
   </section>
 </template>
 
 <script>
-  export default {
-
-  }
+    export default {
+        props: ['name', 'viewers', 'filename'],
+    };
 
 </script>
 
@@ -30,20 +28,22 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 120vw;
     overflow: hidden;
   }
 
   video {
-    max-height: 100vw;
+    width: 100vw;
+    object-fit: cover;
   }
 
   .info {
     display: flex;
     box-sizing: border-box;
-    padding: 1em 1.5em 0;
+    padding: 1em 7vw 0;
     justify-content: space-between;
     flex-flow: row nowrap;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .number {
