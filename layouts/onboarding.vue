@@ -23,7 +23,6 @@
 
 <style scoped>
   #__app_onboarding {
-    background: #000;
     color: #fff;
     width: 100vw;
     height: 100vh;

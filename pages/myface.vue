@@ -1,8 +1,6 @@
 <template>
   <section class="my-face">
-    <div class="video-container">
-      <UserFaceFeed></UserFaceFeed>
-    </div>
+    <UserFaceFeed></UserFaceFeed>
     <div class="info">
       <span class="name">Alec Marcus</span>
       <span class="viewers">
@@ -26,26 +24,21 @@
 </script>
 
 <style scoped>
-  /* .my-face {
-    padding-bottom: 4em;
-  } */
-
-  .video-container, .video-container * {
-    height: 80vh;
-    width: 100%;
-    overflow: hidden;
-  }
-
   .info {
     display: flex;
+    width: 100%;
     box-sizing: border-box;
-    padding: 1em 1.5em 4em;
+    padding: 1em 1.5em 5em;
     justify-content: space-between;
     flex-flow: row nowrap;
     font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
-  .name, .viewers {
+  .name,
+  .viewers {
     background: #fff;
   }
 

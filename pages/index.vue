@@ -1,5 +1,5 @@
 <template>
-  <section id="__ob_one">
+  <section id="index">
     <UserFaceFeed :page="page">
     </UserFacefeed>
     <div class="overlay-text">
@@ -33,8 +33,9 @@
 </script>
 
 <style scoped>
-  #__ob_one {
+  #index {
     padding-top: 14vh;
+    width: 100%;
   }
 
   #advBtn {

@@ -1,13 +1,13 @@
 <template>
   <section class="user-face-feed">
     <div class="vid-wrapper">
-      <video id="video" class="video" height="568" preload autoplay loop muted></video>
+      <video id="video" v-bind:class="[page]" preload autoplay loop muted>
+      </video>
+      <div id="warning">
+        <h4>Face not detected.</h4>
+      </div>
     </div>
     <!-- <canvas id="canvas" class="no-face" width="320" height="568"></canvas> -->
-    <div v-if="page === 'index'" class="dim"></div>
-    <div id="warning">
-      <h4>Face not detected.</h4>
-    </div>
   </section>
 </template>
 
@@ -43,7 +43,7 @@
       // Initiate tracking.js
       window.onload = function () {
         var video = document.getElementById('video');
-        var warning = document.getElementById('warning');
+        // var warning = document.getElementById('warning');
         // var canvas = document.getElementById('canvas');
         // var context = canvas.getContext('2d');
 
@@ -91,9 +91,8 @@
 
 <style scoped>
   .user-face-feed {
-    overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -101,32 +100,27 @@
     z-index: -10;
   }
 
-  .dim {
-    position: absolute;
-    top: 0;
+  .vid-wrapper {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background: #000;
-    opacity: .65;
-    filter: grayscale(50%);
   }
 
-  video {
-    height: 100vh;
-    transition: all .25s ease;
+  video.index {
+    filter: grayscale(1) opacity(.2) contrast(.5);
   }
 
-  canvas {
+  /* canvas {
     position: absolute;
     left: 0;
     top: 0;
-  }
+  } */
 
   #warning {
-    position: absolute;
-    top: 2em;
-    width: 100%;
-    text-align: center;
+    /* width: auto; */
+    position: relative;
+    top: calc(-100vh + 2em);
   }
 
   .hidden {
