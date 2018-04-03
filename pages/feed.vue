@@ -39,6 +39,13 @@
 
 <style scoped>
 
+  /* .feed {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+  } */
+
   .end {
     color: #888;
     width: 100%;

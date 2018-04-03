@@ -27,7 +27,7 @@
     width: 100%;
     height: 3em;
     position: fixed;
-    top: calc(100vh - 3em);
+    bottom: 0;
     left: 0;
     background: #fff;
     display: flex;

@@ -25,8 +25,6 @@
   }
 
   .video-container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 120vw;
     overflow: hidden;

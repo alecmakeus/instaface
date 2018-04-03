@@ -1,6 +1,6 @@
 <template>
   <section class="user-face-feed">
-    <div class="vid-wrapper">
+    <div class="vid-wrapper" v-bind:class="[page]">
       <video id="video" v-bind:class="[page]" preload autoplay loop muted>
       </video>
       <div id="warning">
@@ -43,7 +43,7 @@
       // Initiate tracking.js
       window.onload = function () {
         var video = document.getElementById('video');
-        // var warning = document.getElementById('warning');
+        var warning = document.getElementById('warning');
         // var canvas = document.getElementById('canvas');
         // var context = canvas.getContext('2d');
 
@@ -104,6 +104,11 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .vid-wrapper.index {
     background: #000;
   }
 
