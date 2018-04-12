@@ -12,6 +12,10 @@ module.exports = {
         content: 'width=device-width, initial-scale=1'
       },
       {
+        name: 'mobile-web-app-capable',
+        content: 'yes'
+      }
+      {
         hid: 'description',
         name: 'description',
         content: 'Watch others watch you watch others.'

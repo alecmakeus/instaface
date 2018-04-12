@@ -37,10 +37,6 @@
     left: 0;
   }
 
-  section.user-face-feed {
-    transform: translateY(1.5em);
-  }
-
   .name,
   .viewers {
     background: #fff;

@@ -63,7 +63,7 @@
   }
 
   .about {
-    transform: translateY(-7em);
+    transform: translateY(-3em);
   }
 
   .instructions {

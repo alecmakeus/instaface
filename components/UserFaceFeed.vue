@@ -116,9 +116,12 @@
     background: #000;
   }
 
+  video {
+    object-fit: cover;
+  }
+
   video.index {
     filter: grayscale(.5) opacity(.4) contrast(.75);
-    height: 100vh;
   }
 
   /* canvas {
