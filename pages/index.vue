@@ -3,12 +3,13 @@
     <UserFaceFeed :page="page">
     </UserFacefeed>
     <div class="overlay-text">
+      <h3 class="about" >Watch others <br>watch you <br>watch others.</h3>
       <h1 id="advBtn">
         <nuxt-link to="feed" class="btn">
           &rarr;
         </nuxt-link>
       </h1>
-      <h4>Please show your face.</h4>
+      <h4 class="instructions" >Please show your face.</h4>
     </div>
   </section>
 </template>
@@ -52,13 +53,20 @@
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    height: 37vh;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
     width: 100vw;
+    box-sizing: border-box;
+    padding: 3em;
   }
 
-  h4 {
+  .about {
+    transform: translateY(-7em);
+  }
+
+  .instructions {
     position: absolute;
     bottom: 2em;
   }

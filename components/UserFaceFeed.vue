@@ -50,7 +50,10 @@
         tracking.ViolaJones.classifiers.face = new Float64Array(trackingData.data)
 
         var tracker = new tracking.ObjectTracker("face");
-        tracker.setInitialScale(10);
+        // tracker.setInitialScale(10);
+        // tracker.setStepSize(.5);
+        // tracker.setEdgesDensity(0.05);
+        tracker.setInitialScale(5);
         tracker.setStepSize(.5);
         tracker.setEdgesDensity(0.05);
         tracking.track('#video', tracker, {
@@ -98,6 +101,7 @@
     position: absolute;
     top: 0;
     z-index: -10;
+    overflow: hidden;
   }
 
   .vid-wrapper {
@@ -113,7 +117,8 @@
   }
 
   video.index {
-    filter: grayscale(1) opacity(.2) contrast(.5);
+    filter: grayscale(.5) opacity(.4) contrast(.75);
+    height: 100vh;
   }
 
   /* canvas {

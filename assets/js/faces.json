@@ -1,22 +1,42 @@
 [
   {
-  "name": "Hayley Joyal",
+  "name": "Kendall Slade • London, GB",
+  "filename": "kendall.webm",
+  "viewers": "378"
+  },
+  {
+  "name": "Hayley Joyal • Connecticut, USA",
   "filename": "hayley_joyal.webm",
   "viewers": "549"
   },
   {
-  "name": "Thaia Tzickas",
+  "name": "Thaia Tzickas • Connecticut, USA",
   "filename": "thaia_tzickas.webm",
   "viewers": "345"
   },
   {
-  "name": "Ken Lamm",
+  "name": "Dan Gagnon • Connecticut, USA",
+  "filename": "dan.webm",
+  "viewers": "1624"
+  },
+  {
+  "name": "Olivia Crosby • Connecticut, USA",
+  "filename": "liv.webm",
+  "viewers": "615"
+  },
+  {
+  "name": "Ken Lamm • London, GB",
   "filename": "ken_lamm.webm",
   "viewers": "836"
   },
   {
-  "name": "Sam Nice",
+  "name": "Sam Nice • Connecticut, USA",
   "filename": "sam_nice.webm",
   "viewers": "443"
+  },
+  {
+  "name": "Spencer LeBel • Connecticut, USA",
+  "filename": "spencer.webm",
+  "viewers": "472"
   }
 ]

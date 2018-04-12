@@ -1,17 +1,19 @@
 <template>
   <nav class="bottom-bar">
-    <div>
-      <button onclick="javascript:history.back(-1)">&larr;</button>
-    </div>
-    <div>
-      <nuxt-link to="myface">+</nuxt-link>
-    </div>
-    <div class="view-select">
-      <button>
-        <img src="/ico/grid.svg" id="grid" alt="▓">
-        <img v-if="view === 'grid'" src="/ico/inline.svg" id="inline" alt="▓">
-      </button>
-    </div>
+    <!-- <button onclick="javascript:history.back(-1)">&larr;</button> -->
+    <button>
+      <nuxt-link to="/">&larr;</nuxt-link>
+    </button>
+    <button>
+      <nuxt-link to="feed">
+        <img src="/ico/inline.svg" id="feed">
+      </nuxt-link>
+    </button>
+    <button>
+      <nuxt-link to="myface">
+        <img src="/ico/face.svg" id="face">
+      </nuxt-link>
+    </button>
   </nav>
 </template>
 
@@ -36,7 +38,7 @@
     align-items: center;
   }
 
-  .bottom-bar div {
+  .bottom-bar button {
     font-size: 2em;
     width: 33.33333%;
     text-align: center;
@@ -46,9 +48,13 @@
     justify-content: center;
   }
 
-  .bottom-bar div > * {
+  /* .bottom-bar div>* {
     width: 100%;
     height: 100%;
+  } */
+
+  #face {
+    height: 1em;
   }
 
 </style>
