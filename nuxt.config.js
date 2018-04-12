@@ -14,7 +14,7 @@ module.exports = {
       {
         name: 'mobile-web-app-capable',
         content: 'yes'
-      }
+      },
       {
         hid: 'description',
         name: 'description',
